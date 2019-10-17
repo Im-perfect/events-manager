@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <div>
-          <Route path="/" exact component={EventsListContainer} />
+          <Route path="/event" exact component={EventsListContainer} />
         </div>
       </Provider>
     );
