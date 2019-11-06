@@ -7,7 +7,7 @@ export default class EventsList extends React.Component {
       <div>
         <ul>
           {this.props.events.map(event => (
-            <Link to="/event/:eventId">
+            <Link to={`/event/${event.id}`}>
               <li key={event.id}>{event.name}</li>
             </Link>
           ))}
